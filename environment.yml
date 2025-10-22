@@ -1,0 +1,12 @@
+name: merck_2026
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyter
+  - jupyterlab
+  - pandas
+  - numpy
+  - altair
+  - quarto
