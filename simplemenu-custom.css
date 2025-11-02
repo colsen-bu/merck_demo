@@ -1,0 +1,287 @@
+/* Custom styling for simplemenu menubar */
+
+:root {
+  --r-background-color: #FFF8F0;
+  --r-heading-color: #003087;
+  --r-main-color: #2c2c2c;
+  --r-link-color: #0047bb;
+  --r-link-color-hover: #003087;
+  --r-main-font-size: 36px;
+}
+.center {
+	text-align: center
+}
+
+.reveal p code, .reveal p kbd, .reveal ul code {
+  background: rgba(0, 48, 135, 0.08);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: var(--r-main-color)
+}
+
+.reveal pre {
+  background: rgba(0, 48, 135, 0.05);
+}
+.reveal pre.sourceCode code {
+  background: none;
+}
+.reveal div.sourceCode {
+  border: none;
+}
+
+.reveal .code-wrapper, pre, pre code {
+  white-space: pre-wrap !important;
+}
+
+.slides a:hover {
+  text-decoration: underline;
+}
+
+.menubar {
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: -webkit-transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985), -webkit-transform 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -webkit-transform: translateY(calc(-100% - 1px));
+      -ms-transform: translateY(calc(-100% - 1px));
+          transform: translateY(calc(-100% - 1px));
+  color: var(--r-main-color);
+  padding-right: 3em;
+  padding-right: 100px;
+  z-index: 2;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: clamp(16px, var(--r-main-font-size) * var(--simplemenu-scale, 0.75), 80px);
+  line-height: 1;
+}
+
+
+.menubar * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.menubar.bottom {
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.menubar:before, .menubar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid currentColor;
+  opacity: 0.3;
+}
+.menubar:before {
+  top: 0;
+}
+.menubar:after {
+  bottom: 0;
+}
+.menubar.top:before {
+  opacity: 0;
+}
+.menubar.bottom:after {
+  opacity: 0;
+}
+html:not(.print-pdf) body:not(.hide-menubar) .reveal.ready:not(.hide-menubar) .menubar {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+body.hide-menubar .reveal.ready .menubar a {
+  -webkit-transition: opacity 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: opacity 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: opacity 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+.print-pdf .pdf-page:not(.hide-menubar) .menubar {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.menubar a {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.menubar a:hover {
+  color: var(--r-heading-color);
+}
+
+/* Dynamic logo styling */
+.menubar .menu-logo {
+  width: 8em;
+  height: 3em;
+  margin: 0.5em 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
+}
+
+/* Default logo */
+.menubar .menu-logo {
+  background-image: url('images/colsenfaviimg.png');
+}
+
+/* Logo for Background section */
+.menubar:has(li:first-child.active) .menu-logo {
+  background-image: url('images/sickimg1.png');
+}
+
+/* Logo for Assay Development section */
+.menubar:has(li:nth-child(2).active) .menu-logo {
+  background-image: url('images/sickimg2.png');
+}
+
+/* Logo for Reflections and Learnings section */
+.menubar:has(li:nth-child(3).active) .menu-logo {
+  background-image: url('images/sickimg3.png');
+}
+
+.menubar a.logo {
+  width: 8em;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+.menubar a.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+.menubar > ul {
+  -webkit-transition: opacity 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: opacity 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: opacity 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  gap: 1.5em;
+}
+.menubar > ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 0.2em solid transparent;
+  border-bottom: 0.2em solid transparent;
+}
+.menubar > ul li:before {
+  display: none;
+}
+.menubar > ul li + li {
+  margin: 0;
+}
+.menubar > ul li.active {
+  border-bottom-color: var(--r-heading-color);
+}
+.menubar > ul a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.5;
+  color: currentColor;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+.menubar > ul a:hover {
+  color: currentColor;
+  opacity: 0.75;
+}
+.menubar > ul li.active a {
+  opacity: 1;
+  border-bottom-color: var(--r-heading-color);
+  font-weight: 700;
+  text-shadow: 
+    0 0 10px rgba(0, 48, 135, 0.4),
+    0 0 20px rgba(0, 48, 135, 0.2),
+    0 0 30px rgba(0, 48, 135, 0.1);
+}
+
+.hide-menu .menu, .hide-menu .menu, [data-state=hide-menu] .menu {
+  opacity: 0;
+}
+
+.reveal .slide-number, .menubar .slide-number {
+  background: none;
+  font-family: inherit;
+  color: inherit;
+}
+.reveal .slide-number a, .menubar .slide-number a {
+  padding: 0;
+  opacity: 0.33;
+  color: currentColor;
+}
+.reveal .slide-number a:hover, .menubar .slide-number a:hover {
+  color: currentColor;
+  opacity: 0.75;
+}
+
+.menubar .slide-number {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-size: 0.75em;
+  height: 100%;
+  right: 0;
+  bottom: auto;
+  z-index: 0;
+  padding: 0;
+  padding-right: 1em;
+}
+
+.slides ~ .menubar, .menubar.bottom {
+  top: auto;
+  bottom: 3px;
+}
+
+.slides ~ .menubar ~ .controls {
+  margin-bottom: clamp(16px, 2.5 * var(--r-main-font-size) * var(--simplemenu-scale, 0.75), 100px);
+}

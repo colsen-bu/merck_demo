@@ -1,0 +1,37 @@
+Perfect! I've successfully moved all the backup slides to the end of the presentation. The presentation now has the correct order:
+
+Main Presentation Slides:
+
+Title slide (Overview & Objectives)
+Sickle Cell Disease: Unmet Medical Need
+Assay Strategy & Design Rationale (Development Funnel)
+Primary Erythroid Culture Development
+Cell Culture Miniaturization
+Cell Culture Automation
+Nanostring and alphaLISA endpoints
+Assay Validation: Tool Compounds and Troubleshooting
+Representative Dose-Response Data
+Zooming Backout out on the wider Program
+Key Project Takeaways and Future Directions
+Acknowledgments
+Backup Slides (divider)
+Nanostring Data Analysis Pipeline Construction
+Donor Variabillity Assesment
+Monitoring for Cytotoxic Compounds
+Alternative Systems Comparison
+
+
+Backup Slides Section:
+
+Recommended Flow
+I'd suggest this order for your Assay Development section:
+
+Primary Erythroid Cell Culture Development (you have this)
+NEW: Donor Selection & Qualification Strategy
+NEW: Culture Protocol Optimization Data
+NEW: Automation Implementation & Validation
+NEW: Assay Interference Testing
+NEW: Control Compound Selection & Performance
+Assay Validation: Tool Compounds (you have this)
+NEW: Correlation Between Readout Platforms
+Assay Endpoints & Data Capture (you have this)
