@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="merck_long_pres_960_files/libs/clipboard/clipboard.min.js"></script>
+<script src="merck_long_pres_960_files/libs/clipboard/clipboard.min.js"></script>
 <script src="merck_long_pres_960_files/libs/quarto-html/tabby.min.js"></script>
 <script src="merck_long_pres_960_files/libs/quarto-html/popper.min.js"></script>
 <script src="merck_long_pres_960_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="merck_long_pres_960_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="merck_long_pres_960_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="merck_long_pres_960_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="merck_long_pres_960_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="merck_long_pres_960_files/libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
 <script src="merck_long_pres_960_files/libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.24">
+  <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Christopher Olsen">
   <title>Development of a Primary Erythroid Phenotypic Culture Assay for Sickle Cell Disease Drug Discovery</title>
@@ -31,7 +31,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="merck_long_pres_960_files/libs/revealjs/dist/theme/quarto-f1b1a5dd05fcc458a93446b8252ee592.css">
+  <link rel="stylesheet" href="merck_long_pres_960_files/libs/revealjs/dist/theme/quarto-b83f54b759327c74b946396d6bda3b4c.css">
   <link rel="stylesheet" href="simplemenu-custom.css">
   <link href="merck_long_pres_960_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="merck_long_pres_960_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -126,9 +126,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
-  
-  <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -153,7 +150,7 @@ Christopher Olsen
 </section>
 <section id="outline" class="slide level2">
 <h2>Outline</h2>
-<div class="merck-blue-box" style="font-size: 0.9em;">
+<div class="merck-blue-box" style="font-size: 1.1em;">
 <ul>
 <li><strong>Background</strong>
 <ul>
@@ -180,14 +177,14 @@ Christopher Olsen
 <div class="columns">
 <div class="column" style="width:30%;">
 <p><img data-src="images/hbf.png" style="width:100.0%"></p>
-<div class="feature-card" style="margin-top: 0.5em; font-size: 0.75em; padding: 0.6em;">
+<div class="feature-card" style="margin-top: 0.5em; font-size: 0.9em; padding: 0.7em;">
 <p><strong>Therapeutic Strategy</strong></p>
 <p>Reactivation of fetal hemoglobin (HbF) in adult red blood cells provides disease-modifying treatment for SCD.</p>
 </div>
 </div><div class="column" style="width:70%;">
-<p><img data-src="images/HBAvsHBF.png" style="width:60.0%"></p>
-<div style="font-size: 0.6em; color: #666; margin-top: 0.5em; font-style: italic;">
-<p>Figure 1. A diagram illustrating the transcription factors influencing the gamma-beta switch. (From Haemoglobin F, by sicklesense, 2014, sicklesense).</p>
+<p><img data-src="images/HBAvsHBF.png" style="width:75.0%"></p>
+<div style="font-size: 0.65em; color: #666; margin-top: 0.5em; font-style: italic; line-height: 1.3;">
+<p>A diagram illustrating hemoglobin switching in development. From Haemoglobin F, by sicklesense, 2014, sicklesense.</p>
 </div>
 </div></div>
 </section>
@@ -197,12 +194,12 @@ Christopher Olsen
 <div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/Wan2.5-t2i-preview_00008_.png"></p>
+<p><img data-src="images/Wan2.5-t2i-preview_00008_.png" style="width:90.0%"></p>
 <figcaption>Sickle Cell Disease</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:60%;">
-<div class="feature-card">
+<div class="feature-card" style="font-size: 1.05em;">
 <p><strong>Disease Background</strong></p>
 <ul>
 <li>Single nucleotide mutation in β-globin gene (HBB)</li>
@@ -235,13 +232,13 @@ Christopher Olsen
 <div class="column" style="width:55%;">
 <p><img data-src="images/filefuntier.png" style="width:80.0%"></p>
 </div><div class="column" style="width:45%;">
-<div class="feature-card" style="font-size: 0.75em; margin-bottom: 0.3em; padding: 0.5em;">
+<div class="feature-card" style="font-size: 0.85em; margin-bottom: 0.4em; padding: 0.6em;">
 <p><strong>Tier 1: High-Throughput Biochemical Screening</strong> TR-FRET Assay, LC/MS ect.</p>
 </div>
-<div class="feature-card" style="font-size: 0.75em; margin-bottom: 0.3em; padding: 0.5em;">
+<div class="feature-card" style="font-size: 0.85em; margin-bottom: 0.4em; padding: 0.6em;">
 <p><strong>Tier 2: Target Engagement in vitro</strong> alphaLISA in immortalized cell line, limited treatment time</p>
 </div>
-<div class="highlight-box" style="font-size: 0.8em; margin-bottom: 0.3em; padding: 0.5em; border: 3px solid #FFD700; background: rgba(255, 215, 0, 0.15);">
+<div class="highlight-box" style="font-size: 0.9em; margin-bottom: 0.4em; padding: 0.6em; border: 3px solid #FFD700; background: rgba(255, 215, 0, 0.15);">
 <ul>
 <li><strong>⭐ Tier 3: Physiological Relevant Phenotypic Confirmation ⭐</strong>
 <ul>
@@ -252,7 +249,7 @@ Christopher Olsen
 </ul></li>
 </ul>
 </div>
-<div class="status-card" style="font-size: 0.75em; margin-bottom: 0.3em; padding: 0.5em;">
+<div class="status-card" style="font-size: 0.85em; margin-bottom: 0.4em; padding: 0.6em;">
 <p><strong>Tier 4: Candidate Selection</strong> 3-5 candidates, in vivo testing</p>
 </div>
 </div></div>
@@ -270,9 +267,9 @@ Christopher Olsen
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.6em;
   margin: 1em 0;
-  font-size: 0.85em;
+  font-size: 1em;
 }
 
 .workflow-step {
@@ -280,7 +277,7 @@ Christopher Olsen
 }
 
 .workflow-arrow {
-  font-size: 2em;
+  font-size: 2.2em;
   color: #003087;
   font-weight: bold;
   text-align: center;
@@ -288,37 +285,37 @@ Christopher Olsen
 
 .workflow-image {
   background: white;
-  padding: 0.5em;
+  padding: 0.6em;
   border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0,48,135,0.1);
   margin: 0 auto;
 }
 
 .workflow-label {
-  margin-top: 0.5em;
-  font-size: 0.95em;
+  margin-top: 0.6em;
+  font-size: 1.05em;
   font-weight: bold;
   color: #003087;
 }
 
 .workflow-details {
-  margin-top: 0.3em;
-  font-size: 0.7em;
+  margin-top: 0.4em;
+  font-size: 0.8em;
   color: #2c2c2c;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .loop-container {
   position: relative;
-  padding: 0.5em;
+  padding: 0.6em;
 }
 
 .equipment-cycle {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.2em;
-  margin-top: 0.4em;
-  padding: 0.4em;
+  gap: 0.3em;
+  margin-top: 0.5em;
+  padding: 0.5em;
   background: linear-gradient(135deg, rgba(0, 48, 135, 0.08) 0%, rgba(0, 163, 181, 0.08) 100%);
   border-radius: 8px;
   border: 2px solid rgba(0, 48, 135, 0.2);
@@ -326,7 +323,7 @@ Christopher Olsen
 
 .equipment-item {
   text-align: center;
-  padding: 0.3em;
+  padding: 0.4em;
   background: white;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0,48,135,0.1);
@@ -336,10 +333,10 @@ Christopher Olsen
 .equipment-item::after {
   content: '→';
   position: absolute;
-  right: -0.6em;
+  right: -0.7em;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #003087;
 }
 
@@ -348,26 +345,26 @@ Christopher Olsen
 }
 
 .equipment-item img {
-  height: 50px;
+  height: 60px;
   object-fit: contain;
 }
 
 .equipment-name {
-  font-size: 0.65em;
+  font-size: 0.75em;
   color: #003087;
-  margin-top: 0.2em;
+  margin-top: 0.3em;
   font-weight: bold;
 }
 
 .readout-box {
   background: white;
-  padding: 0.5em;
+  padding: 0.6em;
   border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0,48,135,0.1);
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  gap: 0.8em;
+  gap: 1em;
   align-items: center;
 }
 
@@ -376,16 +373,16 @@ Christopher Olsen
 }
 
 .platform-item img {
-  height: 50px;
+  height: 60px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
 }
 
 .platform-name {
-  font-size: 0.65em;
+  font-size: 0.75em;
   color: #003087;
-  margin-top: 0.2em;
+  margin-top: 0.3em;
   font-weight: bold;
 }
 </style>
@@ -470,13 +467,13 @@ Phase 3: Readout
 .automation-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.6em;
-  margin: 0.4em 0;
+  gap: 0.8em;
+  margin: 0.5em 0;
 }
 
 .equipment-column {
   background: white;
-  padding: 0.5em;
+  padding: 0.7em;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,48,135,0.15);
   border: 2px solid rgba(0,48,135,0.2);
@@ -484,47 +481,47 @@ Phase 3: Readout
 
 .equipment-header {
   text-align: center;
-  margin-bottom: 0.3em;
-  padding-bottom: 0.3em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.4em;
   border-bottom: 2px solid #003087;
 }
 
 .equipment-image-large {
   display: block;
-  margin: 0 auto 0.2em auto;
-  height: 55px;
+  margin: 0 auto 0.3em auto;
+  height: 65px;
   object-fit: contain;
 }
 
 .equipment-title {
-  font-size: 0.85em;
+  font-size: 0.95em;
   font-weight: bold;
   color: #003087;
   text-align: center;
 }
 
 .equipment-function {
-  font-size: 0.65em;
+  font-size: 0.75em;
   color: #76bc21;
   text-align: center;
   font-weight: bold;
-  margin-top: 0.1em;
+  margin-top: 0.2em;
 }
 
 .equipment-details {
-  margin-top: 0.3em;
-  font-size: 0.6em;
-  line-height: 1.15;
+  margin-top: 0.4em;
+  font-size: 0.7em;
+  line-height: 1.25;
 }
 
 .detail-section {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.3em;
 }
 
 .detail-label {
   font-weight: bold;
   color: #003087;
-  margin-bottom: 0.05em;
+  margin-bottom: 0.1em;
 }
 
 .detail-content {
@@ -648,19 +645,38 @@ Benefit:
 </div>
 </div>
 </div>
-<div class="highlight-box" style="margin-top: 0.4em; text-align: center; font-size: 0.7em; padding: 0.25em;">
+<div class="highlight-box" style="margin-top: 0.5em; text-align: center; font-size: 0.8em; padding: 0.3em;">
 <p><strong>Automation Impact:</strong> Processing time 6h → 90min per batch</p>
 </div>
 </section>
-<section id="assay-endpoints-data-capture" class="slide level2">
-<h2>Assay Endpoints &amp; Data Capture</h2>
+<section id="cell-viability-analysis" class="slide level2">
+<h2>Cell Viability Analysis</h2>
+
+<img data-src="images/viabilityplot.png" style="width:90.0%" class="r-stretch"></section>
+<section id="assay-endpoints-data-capture" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Assay Endpoints &amp; Data Capture</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="merck-blue-box" style="font-size: 0.75em; padding: 0.4em;">
+<div class="merck-blue-box" style="font-size: 0.85em; padding: 0.5em;">
 <p><strong>Nanostring nCounter Gene Expression</strong></p>
 </div>
-<div class="feature-card" style="margin-top: 0.5em; font-size: 0.65em; padding: 0.5em; line-height: 1.2; position: relative;">
-<p><img src="images/nano.png" style="float: left; width: 180px; margin-right: 0.8em; margin-bottom: 0.5em;"></p>
+<p><img data-id="nano-img" src="images/nano.png" style="width: 450px; margin: 2em auto 0 auto; display: block;"></p>
+</div><div class="column" style="width:50%;">
+<div class="merck-blue-box" style="font-size: 0.85em; padding: 0.5em;">
+<p><strong>alphaLISA Protein Quantification</strong></p>
+</div>
+<p><img data-id="alpha-img" src="images/alphaLISA.png" style="width: 450px; margin: 2em auto 0 auto; display: block;"></p>
+</div></div>
+</section>
+<section id="assay-endpoints-data-capture-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Assay Endpoints &amp; Data Capture</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="merck-blue-box" style="font-size: 0.85em; padding: 0.5em;">
+<p><strong>Nanostring nCounter Gene Expression</strong></p>
+</div>
+<div class="feature-card" style="margin-top: 0.6em; font-size: 0.60em; padding: 0.5em; line-height: 1.3; position: relative;">
+<p><img data-id="nano-img" src="images/nano.png" style="float: left; width: 200px; margin-right: 1em; margin-bottom: 0.6em;"></p>
 <ul>
 <li><strong>Plexset with 12 gene panel including:</strong>
 <ul>
@@ -676,11 +692,11 @@ Benefit:
 </ul>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="merck-blue-box" style="font-size: 0.75em; padding: 0.4em;">
-<p><strong>EnVision alphaLISA Protein Quantification</strong></p>
+<div class="merck-blue-box" style="font-size: 0.85em; padding: 0.5em;">
+<p><strong>alphaLISA Protein Quantification</strong></p>
 </div>
-<div class="feature-card" style="margin-top: 0.5em; font-size: 0.65em; padding: 0.5em; line-height: 1.2; position: relative;">
-<p><img src="images/alphaLISA.png" style="float: left; width: 180px; margin-right: 0.8em; margin-bottom: 0.5em;"></p>
+<div class="feature-card" style="margin-top: 0.6em; font-size: 0.70em; padding: 0.5em; line-height: 1.3; position: relative;">
+<p><img data-id="alpha-img" src="images/alphaLISA.png" style="float: left; width: 200px; margin-right: 1em; margin-bottom: 0.6em;"></p>
 <ul>
 <li><strong>Protein readout:</strong>
 <ul>
@@ -694,16 +710,16 @@ Benefit:
 </ul>
 </div>
 </div></div>
-<div class="highlight-box" style="margin-top: 0.5em; text-align: center; font-size: 0.7em; padding: 0.35em;">
+<div class="highlight-box" style="margin-top: 0.6em; text-align: center; font-size: 0.8em; padding: 0.4em;">
 <p><strong>Dual-platform approach:</strong> mRNA mechanistic insights + clinically relevant protein endpoints</p>
 </div>
 </section>
 <section id="assay-development-criteria-production-readiness-checklist" class="slide level2">
 <h2>Assay Development Criteria: Production Readiness Checklist</h2>
-<div class="merck-blue-box" style="margin-bottom: 0.4em; padding: 0.35em; font-size: 0.8em;">
+<div class="merck-blue-box" style="margin-bottom: 0.5em; padding: 0.4em; font-size: 0.9em;">
 <p><strong>Assay Development Standards</strong></p>
 </div>
-<div style="font-size: 0.8em; line-height: 1.4;">
+<div style="font-size: 0.95em; line-height: 1.5;">
 <ul>
 <li><strong>Performance:</strong> Z’ ≥0.5 | S/B ≥3 | CV% &lt;20%</li>
 <li><strong>Reproducibility:</strong> Validated across operators &amp; reagent lots</li>
@@ -712,7 +728,7 @@ Benefit:
 <li><strong>Operations:</strong> SOP, data pipeline, throughput</li>
 </ul>
 </div>
-<div class="highlight-box" style="margin-top: 0.4em; padding: 0.35em; text-align: center; font-size: 0.85em;">
+<div class="highlight-box" style="margin-top: 0.5em; padding: 0.4em; text-align: center; font-size: 0.95em;">
 <p><strong>Status: Qualified for Production Screening</strong></p>
 </div>
 </section>
@@ -720,7 +736,7 @@ Benefit:
 <h2>Assay Validation: Tool Compounds</h2>
 <div class="columns">
 <div class="column" style="width:20%;">
-<div style="padding: 0.4em; background: rgba(0, 48, 135, 0.05); border-radius: 4px; margin-bottom: 0.3em; font-size: 0.7em; line-height: 1.3;">
+<div style="padding: 0.5em; background: rgba(0, 48, 135, 0.05); border-radius: 4px; margin-bottom: 0.4em; font-size: 0.8em; line-height: 1.4;">
 <p><strong>Assay Robustness</strong></p>
 <ul>
 <li><strong>Z’ Factor:</strong> <span style="color: #76bc21; font-weight: bold;">0.82</span> ✓</li>
@@ -728,7 +744,7 @@ Benefit:
 <li><strong>Data Quality:</strong> <span style="color: #76bc21; font-weight: bold;">99.2%</span></li>
 </ul>
 </div>
-<div style="padding: 0.4em; background: rgba(0, 48, 135, 0.05); border-radius: 4px; font-size: 0.7em; line-height: 1.3;">
+<div style="padding: 0.5em; background: rgba(0, 48, 135, 0.05); border-radius: 4px; font-size: 0.8em; line-height: 1.4;">
 <p><strong>Performance</strong></p>
 <ul>
 <li><strong>Signal-to-Background:</strong> <span style="color: #00a3b5; font-weight: bold;">95%</span></li>
@@ -737,79 +753,94 @@ Benefit:
 </ul>
 </div>
 </div><div class="column" style="width:80%;">
-<div id="cce0546b" class="cell" data-execution_count="2">
-<div class="cell-output cell-output-display" data-execution_count="2">
-
-<style>
-  #altair-viz-2eee3830207a48049304cac57257a792.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-2eee3830207a48049304cac57257a792.vega-embed details,
-  #altair-viz-2eee3830207a48049304cac57257a792.vega-embed details summary {
-    position: relative;
-  }
-</style>
-<div id="altair-viz-2eee3830207a48049304cac57257a792"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2eee3830207a48049304cac57257a792") {
-      outputDiv = document.getElementById("altair-viz-2eee3830207a48049304cac57257a792");
-    }
-
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      let deps = ["vega-embed"];
-      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"grid": false}, "legend": {"cornerRadius": 5, "fillColor": "#f9f9f9", "padding": 8, "strokeColor": "gray"}}, "layer": [{"data": {"name": "data-38e193ac2580d8de6c778c65b2e7c07a"}, "mark": {"type": "circle", "cursor": "pointer", "opacity": 0.8}, "encoding": {"color": {"field": "test_condition", "legend": {"direction": "vertical", "labelFontSize": 9, "orient": "right", "title": "Test Condition", "titleFontSize": 11, "titleFontWeight": "bold"}, "scale": {"domain": ["Control A", "Control B", "Modified pH", "High Serum"], "range": ["#003087", "#00a3b5", "#76bc21", "#ff6f31"]}, "type": "nominal"}, "href": {"field": "eln_url", "type": "nominal"}, "size": {"field": "std_dev", "legend": {"direction": "vertical", "format": ".3f", "labelFontSize": 9, "orient": "right", "title": "Std Dev", "titleFontSize": 11, "titleFontWeight": "bold"}, "scale": {"domain": [0.03, 0.12], "range": [60, 240]}, "type": "quantitative"}, "tooltip": [{"field": "date_label", "title": "Date", "type": "nominal"}, {"field": "z_prime", "format": ".2f", "title": "Z' Factor", "type": "quantitative"}, {"field": "std_dev", "format": ".3f", "title": "Std Dev", "type": "quantitative"}, {"field": "test_condition", "title": "Test Condition", "type": "nominal"}, {"field": "assay_id", "title": "Assay ID", "type": "nominal"}, {"field": "status", "title": "Status", "type": "nominal"}], "x": {"axis": {"format": "%b", "grid": false, "labelColor": "#2c2c2c", "labelFontSize": 11, "title": "Assay Date (2026)", "titleColor": "#2c2c2c", "titleFontSize": 13, "titleFontWeight": "bold"}, "field": "date", "scale": {"padding": 25}, "timeUnit": "yearmonth", "type": "temporal"}, "y": {"axis": {"grid": false, "labelColor": "#2c2c2c", "labelFontSize": 11, "title": "Z' Factor", "titleColor": "#2c2c2c", "titleFontSize": 13, "titleFontWeight": "bold"}, "field": "z_prime", "scale": {"domain": [0, 1]}, "type": "quantitative"}}}, {"data": {"name": "data-56e8450a96e5483e8a99fd90422daa8f"}, "mark": {"type": "rule", "color": "#ff6f31", "size": 2, "strokeDash": [5, 5]}, "encoding": {"y": {"field": "y", "type": "quantitative"}}}, {"data": {"name": "data-82310db68292017001ad8b43477371a3"}, "mark": {"type": "text", "align": "right", "color": "#ff6f31", "fontSize": 11}, "encoding": {"text": {"field": "text", "type": "nominal"}, "x": {"field": "x", "timeUnit": "yearmonth", "type": "temporal"}, "y": {"field": "y", "type": "quantitative"}}}], "height": 350, "title": {"text": "Z' Factor Performance Over Time", "anchor": "middle", "color": "#003087", "fontSize": 16, "fontWeight": "bold"}, "width": 730, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-38e193ac2580d8de6c778c65b2e7c07a": [{"date": "2024-01-15T00:00:00", "z_prime": 0.35, "std_dev": 0.12, "assay_id": "ASY-001", "test_condition": "Control A", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=1", "date_label": "Jan 15", "status": "Below Target"}, {"date": "2024-01-28T00:00:00", "z_prime": 0.42, "std_dev": 0.1, "assay_id": "ASY-002", "test_condition": "Control A", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=2", "date_label": "Jan 28", "status": "Below Target"}, {"date": "2024-02-12T00:00:00", "z_prime": 0.58, "std_dev": 0.08, "assay_id": "ASY-003", "test_condition": "Control A", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=3", "date_label": "Feb 12", "status": "Good"}, {"date": "2024-02-25T00:00:00", "z_prime": 0.65, "std_dev": 0.07, "assay_id": "ASY-004", "test_condition": "Control B", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=4", "date_label": "Feb 25", "status": "Good"}, {"date": "2024-03-10T00:00:00", "z_prime": 0.68, "std_dev": 0.06, "assay_id": "ASY-005", "test_condition": "Control B", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=5", "date_label": "Mar 10", "status": "Good"}, {"date": "2024-04-05T00:00:00", "z_prime": 0.74, "std_dev": 0.05, "assay_id": "ASY-006", "test_condition": "Control B", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=6", "date_label": "Apr 05", "status": "Excellent"}, {"date": "2024-05-08T00:00:00", "z_prime": 0.78, "std_dev": 0.055, "assay_id": "ASY-007", "test_condition": "Modified pH", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=7", "date_label": "May 08", "status": "Excellent"}, {"date": "2024-06-03T00:00:00", "z_prime": 0.8, "std_dev": 0.045, "assay_id": "ASY-008", "test_condition": "Modified pH", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=8", "date_label": "Jun 03", "status": "Excellent"}, {"date": "2024-06-20T00:00:00", "z_prime": 0.85, "std_dev": 0.04, "assay_id": "ASY-009", "test_condition": "Modified pH", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=9", "date_label": "Jun 20", "status": "Excellent"}, {"date": "2024-07-02T00:00:00", "z_prime": 0.77, "std_dev": 0.048, "assay_id": "ASY-010", "test_condition": "High Serum", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=10", "date_label": "Jul 02", "status": "Excellent"}, {"date": "2024-07-18T00:00:00", "z_prime": 0.82, "std_dev": 0.042, "assay_id": "ASY-011", "test_condition": "High Serum", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=11", "date_label": "Jul 18", "status": "Excellent"}, {"date": "2024-08-05T00:00:00", "z_prime": 0.88, "std_dev": 0.035, "assay_id": "ASY-012", "test_condition": "High Serum", "eln_url": "https://demo.elabftw.net/experiments.php?mode=view&id=12", "date_label": "Aug 05", "status": "Excellent"}], "data-56e8450a96e5483e8a99fd90422daa8f": [{"y": 0.5}], "data-82310db68292017001ad8b43477371a3": [{"x": "2024-08-05T00:00:00", "y": 0.52, "text": "Target: 0.5"}]}}, {"mode": "vega-lite"});
-</script>
+<div id="cce0546b" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+<figure>
+<p><img data-src="merck_long_pres_960_files/figure-revealjs/cell-2-output-1.svg"></p>
+</figure>
+</div>
 </div>
 </div>
 </div></div>
+</section>
+<section id="analysis-pipeline-development" class="slide level2">
+<h2>Analysis Pipeline Development</h2>
+<style>
+.pipeline-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2em;
+  margin: 2em 0;
+  position: relative;
+}
+
+.pipeline-item {
+  text-align: center;
+  position: relative;
+}
+
+.pipeline-arrow {
+  position: absolute;
+  font-size: 3em;
+  color: #003087;
+  font-weight: bold;
+}
+
+.arrow-up {
+  top: -30%;
+  left: 95%;
+  transform: translateX(-50%) rotate(-20deg);
+}
+
+.arrow-down {
+  bottom: -30%;
+  left: 95%;
+  transform: translateX(-50%) rotate(20deg);
+}
+
+.arrow-right-top {
+  top: 20%;
+  right: -50%;
+  transform: translateX(-50%) rotate(20deg);
+}
+
+.arrow-right-bottom {
+  bottom: 20%;
+  right: -50%;
+  transform: translateX(-50%) rotate(-20deg);
+}
+</style>
+<div class="pipeline-container">
+<div class="pipeline-item">
+<p><img src="images/nsolversoft.png" style="width: 250px; height: auto;"></p>
+<div class="pipeline-arrow arrow-up">
+→
+</div>
+<div class="pipeline-arrow arrow-down">
+→
+</div>
+</div>
+<div class="pipeline-item">
+<div style="margin-bottom: 1em;">
+<iframe src="https://java-decompiler.github.io/" style="width: 100%; height: 300px; border: 2px solid #003087; border-radius: 8px;">
+</iframe>
+</div>
+<div class="pipeline-arrow arrow-right-top">
+→
+</div>
+<div style="margin-top: 2em;">
+<p><img src="images/noun-documentation.svg" style="width: 150px; height: auto;"></p>
+</div>
+<div class="pipeline-arrow arrow-right-bottom">
+→
+</div>
+</div>
+<div class="pipeline-item">
+<p><img src="images/Python-logo-notext.png" style="width: 200px; height: auto;"></p>
+</div>
+</div>
 </section></section>
 <section>
 <section id="reflections-and-learnings" class="title-slide slide level1 center" data-stack-name="Reflections and Learnings">
@@ -820,14 +851,14 @@ Benefit:
 <h2>Challenges &amp; Solutions</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="feature-card" style="font-size: 0.8em; padding: 0.6em;">
+<div class="feature-card" style="font-size: 0.9em; padding: 0.7em;">
 <p><strong>Technical Challenges</strong></p>
 <p><strong>1. Donor Variability:</strong> 3-5 fold baseline HbF differences - <em>Solution:</em> Normalized metrics; qualified donor panel</p>
 <p><strong>2. Culture Reproducibility:</strong> Batch-to-batch variation - <em>Solution:</em> Lot testing; controlled serum batches</p>
 <p><strong>3. Throughput Limitations:</strong> Manual culture steps - <em>Solution:</em> Semi-automation; batch processing</p>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="feature-card" style="font-size: 0.8em; padding: 0.6em;">
+<div class="feature-card" style="font-size: 0.9em; padding: 0.7em;">
 <p><strong>Analytical Challenges</strong></p>
 <p><strong>4. Nanostring Throughput:</strong> 12-24 samples/run limitation - <em>Solution:</em> Prioritized compounds; alphaLISA primary</p>
 <p><strong>5. Data Integration:</strong> Correlating mRNA and protein - <em>Solution:</em> Custom pipeline; unified database</p>
@@ -837,12 +868,12 @@ Benefit:
 </section>
 <section id="key-takeaways-impact" class="slide level2">
 <h2>Key Takeaways &amp; Impact</h2>
-<div class="merck-blue-box" style="margin-bottom: 0.8em; font-size: 0.95em; padding: 0.5em;">
+<div class="merck-blue-box" style="margin-bottom: 1em; font-size: 1.05em; padding: 0.6em;">
 <p><strong>Primary Accomplishments</strong></p>
 </div>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="feature-card" style="font-size: 0.9em; padding: 0.7em;">
+<div class="feature-card" style="font-size: 1em; padding: 0.8em;">
 <p><strong>Assay Development</strong></p>
 <p>✓ Established robust primary cell culture system (Z’ &gt;0.7)</p>
 <p>✓ Implemented dual-readout platform (Nanostring + alphaLISA)</p>
@@ -851,7 +882,7 @@ Benefit:
 <p>✓ Generated mechanistic insight framework</p>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="feature-card" style="font-size: 0.9em; padding: 0.7em;">
+<div class="feature-card" style="font-size: 1em; padding: 0.8em;">
 <p><strong>Drug Discovery Impact</strong></p>
 <p>✓ Supported 3 lead optimization campaigns</p>
 <p>✓ Screened &gt;2,500 compounds over 18 months</p>
@@ -860,7 +891,7 @@ Benefit:
 <p>✓ Informed candidate selection for in vivo studies</p>
 </div>
 </div></div>
-<div class="status-card" style="margin-top: 0.8em; font-size: 0.9em; padding: 0.6em;">
+<div class="status-card" style="margin-top: 1em; font-size: 1em; padding: 0.7em;">
 <p><strong>Scientific Contribution:</strong> Physiologically relevant, translational assay bridging medicinal chemistry and clinical development for sickle cell disease therapeutics</p>
 </div>
 </section>
@@ -868,20 +899,20 @@ Benefit:
 <h2>Acknowledgments</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="feature-card" style="font-size: 0.9em; padding: 0.7em;">
+<div class="feature-card" style="font-size: 1em; padding: 0.8em;">
 <p><strong>Collaborators &amp; Contributors</strong></p>
 <p><strong>Biology Team:</strong> - Primary cell culture development - Assay validation &amp; execution - Data analysis &amp; interpretation</p>
 <p><strong>Chemistry Team:</strong> - Compound synthesis &amp; SAR - Lead optimization campaigns</p>
 <p><strong>Translational Sciences:</strong> - Clinical sample coordination - Biomarker strategy</p>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="feature-card" style="font-size: 0.9em; padding: 0.7em;">
+<div class="feature-card" style="font-size: 1em; padding: 0.8em;">
 <p><strong>Technical Support</strong></p>
 <p><strong>Core Facilities:</strong> - Nanostring nCounter operations - Flow cytometry core - Automation support</p>
 <p><strong>External Partners:</strong> - SCD patient advocacy groups - Clinical material suppliers - Technology vendors</p>
 </div>
 </div></div>
-<div class="highlight-box" style="margin-top: 0.8em; text-align: center; font-size: 1.1em; padding: 0.6em;">
+<div class="highlight-box" style="margin-top: 1em; text-align: center; font-size: 1.2em; padding: 0.7em;">
 <p><strong>Questions?</strong></p>
 </div>
 </section>
@@ -895,11 +926,11 @@ Benefit:
 <h2>Nanostring nCounter Background</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
-<div class="merck-blue-box" style="font-size: 0.95em; padding: 0.5em;">
+<div class="merck-blue-box" style="font-size: 1.05em; padding: 0.6em;">
 <p><strong>Technology Overview</strong></p>
 <p>Digital molecular barcoding for direct mRNA quantification without amplification</p>
 </div>
-<div class="feature-card" style="margin-top: 0.8em; font-size: 0.9em; padding: 0.7em;">
+<div class="feature-card" style="margin-top: 1em; font-size: 1em; padding: 0.8em;">
 <p><strong>Custom CodeSet Design</strong></p>
 <ul>
 <li><strong>Target Genes:</strong> HBG1, HBG2 (γ-globin), HBB, HBA1/2</li>
@@ -910,7 +941,7 @@ Benefit:
 </ul>
 </div>
 </div><div class="column" style="width:45%;">
-<div class="status-card" style="font-size: 0.85em; padding: 0.6em;">
+<div class="status-card" style="font-size: 0.95em; padding: 0.7em;">
 <p><strong>Workflow Implementation</strong></p>
 <ol type="1">
 <li>Cell lysis &amp; mRNA isolation</li>
@@ -922,7 +953,7 @@ Benefit:
 <p><strong>Throughput:</strong> 12-24 samples per run</p>
 <p><strong>Turnaround:</strong> 48 hours</p>
 </div>
-<div class="highlight-box" style="margin-top: 0.8em; font-size: 0.9em; padding: 0.5em;">
+<div class="highlight-box" style="margin-top: 1em; font-size: 1em; padding: 0.6em;">
 <p><strong>Key Advantage:</strong> Minimal sample input (100 ng RNA)</p>
 </div>
 </div></div>
@@ -1115,10 +1146,10 @@ Benefit:
         // specified using percentage units.
         width: 1280,
 
-        height: 700,
+        height: 900,
 
         // Factor of the display size that should remain empty around the content
-        margin: 0.1,
+        margin: 4.0e-2,
 
         math: {
           mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
