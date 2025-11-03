@@ -6,10 +6,10 @@
 <script src="merck_long_pres_960_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="merck_long_pres_960_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="merck_long_pres_960_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="merck_long_pres_960_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="merck_long_pres_960_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="merck_long_pres_960_files/libs/quarto-contrib/roughnotation-0.5.1/rough-notation.iife.js"></script>
 <script src="merck_long_pres_960_files/libs/quarto-contrib/roughnotation-init-1.0.0/rough.js"></script><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.25">
+  <meta name="generator" content="quarto-1.8.24">
 
   <meta name="author" content="Christopher Olsen">
   <title>Development of a Primary Erythroid Phenotypic Culture Assay for Sickle Cell Disease Drug Discovery</title>
@@ -31,7 +31,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="merck_long_pres_960_files/libs/revealjs/dist/theme/quarto-b83f54b759327c74b946396d6bda3b4c.css">
+  <link rel="stylesheet" href="merck_long_pres_960_files/libs/revealjs/dist/theme/quarto-f1b1a5dd05fcc458a93446b8252ee592.css">
   <link rel="stylesheet" href="simplemenu-custom.css">
   <link href="merck_long_pres_960_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="merck_long_pres_960_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -152,19 +152,18 @@ Christopher Olsen
 <h2>Outline</h2>
 <div class="merck-blue-box" style="font-size: 1.1em;">
 <ul>
-<li><strong>Background</strong>
+<li><strong><img data-src="images/sickimg1.png" style="vertical-align: middle; margin-right: 10px;" height="30">Background</strong>
 <ul>
 <li>Sickle cell disease pathophysiology and unmet medical need.</li>
-<li>Development funnel and assay design considerations.</li>
-<li>Benefits and drawbacks of primary cell culture approach.</li>
+<li>Screening funnel and assay design considerations.</li>
 </ul></li>
-<li><strong>Assay Development</strong>
+<li><strong><img data-src="images/sickimg2.png" style="vertical-align: middle; margin-right: 10px;" height="30">Assay Development</strong>
 <ul>
 <li>Primary erythroid culture protocol optimization and automation</li>
 <li>Nanostring and alphaLISA endpoint Z’ achievement</li>
 <li>Assay validation and troubleshooting</li>
 </ul></li>
-<li><strong>Reflections and Learnings</strong>
+<li><strong><img data-src="images/sickimg3.png" style="vertical-align: middle; margin-right: 10px;" height="30">Reflections and Learnings</strong>
 <ul>
 <li>Technical and analytical challenges encountered.</li>
 <li>Key takeaways and broader applicability.</li>
@@ -176,29 +175,38 @@ Christopher Olsen
 <h2>Molecular Biology of Hemoglobin Switching and Hemoglobin Types</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
+<div style="font-size: 0.5em;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="images/hbf.png" style="width:100.0%"></p>
+<figcaption>Hemoglobin - Generated with Wan2.5-Preview</figcaption>
+</figure>
+</div>
+</div>
 <div class="feature-card" style="margin-top: 0.5em; font-size: 0.9em; padding: 0.7em;">
 <p><strong>Therapeutic Strategy</strong></p>
 <p>Reactivation of fetal hemoglobin (HbF) in adult red blood cells provides disease-modifying treatment for SCD.</p>
 </div>
 </div><div class="column" style="width:70%;">
 <p><img data-src="images/HBAvsHBF.png" style="width:75.0%"></p>
-<div style="font-size: 0.65em; color: #666; margin-top: 0.5em; font-style: italic; line-height: 1.3;">
-<p>A diagram illustrating hemoglobin switching in development. From Haemoglobin F, by sicklesense, 2014, sicklesense.</p>
+<div style="font-size: 0.5em; color: #2c2c2c; margin-top: 1em; font-style: italic; line-height: 1.4; max-width: 70%; margin-left: auto; margin-right: auto; text-align: left;">
+<p>Haemoglobin F, by sicklesense, 2014, sicklesense.</p>
 </div>
 </div></div>
 </section>
 <section id="sickle-cell-disease-unmet-medical-need" class="slide level2">
 <h2>Sickle Cell Disease: Unmet Medical Need</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:50%;">
+<div style="font-size: 0.5em;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/Wan2.5-t2i-preview_00008_.png" style="width:90.0%"></p>
-<figcaption>Sickle Cell Disease</figcaption>
+<p><img data-src="images/unnamed_sickle.png"></p>
+<figcaption>Sickle Cell Disease - Sangamo Therapeutics</figcaption>
 </figure>
 </div>
-</div><div class="column" style="width:60%;">
+</div>
+</div><div class="column" style="width:50%;">
 <div class="feature-card" style="font-size: 1.05em;">
 <p><strong>Disease Background</strong></p>
 <ul>
@@ -410,7 +418,7 @@ Phase 1: Expansion
 Phase 2: Differentiation
 </div>
 <div class="workflow-details">
-<p>Days 0 – 10<br> Compound addition<br> Cytokine cocktail addition for differentiation<br> 96-well plates<br> Hemoglobin synthesis</p>
+<p>Days 0 – 10<br> Compound addition<br> Cytokine cocktail addition for differentiation to erythrocytes<br> 96-well plates</p>
 </div>
 <div class="equipment-cycle">
 <div class="equipment-item">
@@ -649,10 +657,15 @@ Benefit:
 <p><strong>Automation Impact:</strong> Processing time 6h → 90min per batch</p>
 </div>
 </section>
+<section id="sample-plate-map" class="slide level2">
+<h2>Sample Plate Map</h2>
+<iframe src="https://www.plate.mcvcllmhgb.com/" style="width: 100%; height: 700px; border: 2px solid #003087; border-radius: 8px;">
+</iframe>
+</section>
 <section id="cell-viability-analysis" class="slide level2">
 <h2>Cell Viability Analysis</h2>
 
-<img data-src="images/viabilityplot.png" style="width:90.0%" class="r-stretch"></section>
+<img data-src="images/viabilityplot.png" style="width:100.0%" class="r-stretch"></section>
 <section id="assay-endpoints-data-capture" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Assay Endpoints &amp; Data Capture</h2>
 <div class="columns">
@@ -713,56 +726,6 @@ Benefit:
 <div class="highlight-box" style="margin-top: 0.6em; text-align: center; font-size: 0.8em; padding: 0.4em;">
 <p><strong>Dual-platform approach:</strong> mRNA mechanistic insights + clinically relevant protein endpoints</p>
 </div>
-</section>
-<section id="assay-development-criteria-production-readiness-checklist" class="slide level2">
-<h2>Assay Development Criteria: Production Readiness Checklist</h2>
-<div class="merck-blue-box" style="margin-bottom: 0.5em; padding: 0.4em; font-size: 0.9em;">
-<p><strong>Assay Development Standards</strong></p>
-</div>
-<div style="font-size: 0.95em; line-height: 1.5;">
-<ul>
-<li><strong>Performance:</strong> Z’ ≥0.5 | S/B ≥3 | CV% &lt;20%</li>
-<li><strong>Reproducibility:</strong> Validated across operators &amp; reagent lots</li>
-<li><strong>Validation:</strong> Dose-response, EC₅₀/IC₅₀, dynamic range</li>
-<li><strong>Interference:</strong> Plate effects, DMSO, matrix effects</li>
-<li><strong>Operations:</strong> SOP, data pipeline, throughput</li>
-</ul>
-</div>
-<div class="highlight-box" style="margin-top: 0.5em; padding: 0.4em; text-align: center; font-size: 0.95em;">
-<p><strong>Status: Qualified for Production Screening</strong></p>
-</div>
-</section>
-<section id="assay-validation-tool-compounds" class="slide level2">
-<h2>Assay Validation: Tool Compounds</h2>
-<div class="columns">
-<div class="column" style="width:20%;">
-<div style="padding: 0.5em; background: rgba(0, 48, 135, 0.05); border-radius: 4px; margin-bottom: 0.4em; font-size: 0.8em; line-height: 1.4;">
-<p><strong>Assay Robustness</strong></p>
-<ul>
-<li><strong>Z’ Factor:</strong> <span style="color: #76bc21; font-weight: bold;">0.82</span> ✓</li>
-<li><strong>CV%:</strong> <span style="color: #76bc21; font-weight: bold;">8.2%</span> ✓</li>
-<li><strong>Data Quality:</strong> <span style="color: #76bc21; font-weight: bold;">99.2%</span></li>
-</ul>
-</div>
-<div style="padding: 0.5em; background: rgba(0, 48, 135, 0.05); border-radius: 4px; font-size: 0.8em; line-height: 1.4;">
-<p><strong>Performance</strong></p>
-<ul>
-<li><strong>Signal-to-Background:</strong> <span style="color: #00a3b5; font-weight: bold;">95%</span></li>
-<li><strong>Dynamic Ratio:</strong> <span style="color: #00a3b5; font-weight: bold;">12.5</span></li>
-<li><strong>Throughput:</strong> <span style="color: #00a3b5; font-weight: bold;">3,840/week</span></li>
-</ul>
-</div>
-</div><div class="column" style="width:80%;">
-<div id="cce0546b" class="cell" data-execution_count="3">
-<div class="cell-output cell-output-display" data-execution_count="3">
-<div>
-<figure>
-<p><img data-src="merck_long_pres_960_files/figure-revealjs/cell-2-output-1.svg"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
 </section>
 <section id="analysis-pipeline-development" class="slide level2">
 <h2>Analysis Pipeline Development</h2>
@@ -841,6 +804,56 @@ Benefit:
 <p><img src="images/Python-logo-notext.png" style="width: 200px; height: auto;"></p>
 </div>
 </div>
+</section>
+<section id="assay-development-criteria-production-readiness-checklist" class="slide level2">
+<h2>Assay Development Criteria: Production Readiness Checklist</h2>
+<div class="merck-blue-box" style="margin-bottom: 0.5em; padding: 0.4em; font-size: 0.9em;">
+<p><strong>Assay Development Standards</strong></p>
+</div>
+<div style="font-size: 0.95em; line-height: 1.5;">
+<ul>
+<li><strong>Performance:</strong> Z’ ≥0.5 | S/B ≥3 | CV% &lt;20%</li>
+<li><strong>Reproducibility:</strong> Validated across operators &amp; reagent lots</li>
+<li><strong>Validation:</strong> Dose-response, IC₅₀ within 2-3x between runs, dynamic range</li>
+<li><strong>Interference:</strong> Plate effects, DMSO, matrix effects</li>
+<li><strong>Operations:</strong> SOP, data pipeline, throughput</li>
+</ul>
+</div>
+<div class="highlight-box" style="margin-top: 0.5em; padding: 0.4em; text-align: center; font-size: 0.95em;">
+<p><strong>Status: Qualified for Production Screening</strong></p>
+</div>
+</section>
+<section id="assay-validation-tool-compounds" class="slide level2">
+<h2>Assay Validation: Tool Compounds</h2>
+<div class="columns">
+<div class="column" style="width:20%;">
+<div style="padding: 0.5em; background: rgba(0, 48, 135, 0.05); border-radius: 4px; margin-bottom: 0.4em; font-size: 0.8em; line-height: 1.4;">
+<p><strong>Assay Robustness</strong></p>
+<ul>
+<li><strong>Z’ Factor:</strong> <span style="color: #76bc21; font-weight: bold;">0.5</span> ✓</li>
+<li><strong>CV%:</strong> <span style="color: #76bc21; font-weight: bold;">8.2%</span> ✓</li>
+<li><strong>Data Quality:</strong> <span style="color: #76bc21; font-weight: bold;">Multiple Operators</span> ✓</li>
+</ul>
+</div>
+<div style="padding: 0.5em; background: rgba(0, 48, 135, 0.05); border-radius: 4px; font-size: 0.8em; line-height: 1.4;">
+<p><strong>Performance</strong></p>
+<ul>
+<li><strong>Signal-to-Background:</strong> <span style="color: #00a3b5; font-weight: bold;">3x</span></li>
+<li><strong>Low LOD:</strong> <span style="color: #00a3b5; font-weight: bold;">100ng RNA required</span></li>
+<li><strong>Throughput:</strong> <span style="color: #00a3b5; font-weight: bold;">25 compounds/week</span></li>
+</ul>
+</div>
+</div><div class="column" style="width:80%;">
+<div id="cce0546b" class="cell" data-execution_count="13">
+<div class="cell-output cell-output-display" data-execution_count="13">
+<div>
+<figure>
+<p><img data-src="merck_long_pres_960_files/figure-revealjs/cell-2-output-1.svg"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 </section></section>
 <section>
 <section id="reflections-and-learnings" class="title-slide slide level1 center" data-stack-name="Reflections and Learnings">
@@ -853,16 +866,16 @@ Benefit:
 <div class="column" style="width:50%;">
 <div class="feature-card" style="font-size: 0.9em; padding: 0.7em;">
 <p><strong>Technical Challenges</strong></p>
-<p><strong>1. Donor Variability:</strong> 3-5 fold baseline HbF differences - <em>Solution:</em> Normalized metrics; qualified donor panel</p>
-<p><strong>2. Culture Reproducibility:</strong> Batch-to-batch variation - <em>Solution:</em> Lot testing; controlled serum batches</p>
-<p><strong>3. Throughput Limitations:</strong> Manual culture steps - <em>Solution:</em> Semi-automation; batch processing</p>
+<p><strong>1. Donor Variability:</strong> Baseline HbF differences. - <em>Solution:</em> Screen multiple donors ahead of production to locate ideal profile.</p>
+<p><strong>2. Culture Reproducibility:</strong> Batch-to-batch variation - <em>Solution:</em> Automation enables consistent replating at consistent culture densisties.</p>
+<p><strong>3. Throughput Limitations:</strong> Manual culture steps. - <em>Solution:</em> Cell Culture Semi-automation.</p>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="feature-card" style="font-size: 0.9em; padding: 0.7em;">
 <p><strong>Analytical Challenges</strong></p>
-<p><strong>4. Nanostring Throughput:</strong> 12-24 samples/run limitation - <em>Solution:</em> Prioritized compounds; alphaLISA primary</p>
-<p><strong>5. Data Integration:</strong> Correlating mRNA and protein - <em>Solution:</em> Custom pipeline; unified database</p>
-<p><strong>6. Assay Interference:</strong> Autofluorescence from compounds - <em>Solution:</em> AlphaLISA format immune to interference</p>
+<p><strong>4. Nanostring Analysis:</strong> nSolver software used for discovery not built for screening. - <em>Solution:</em> Deconvoluted nSolver processing and implemented in Python.</p>
+<p><strong>5. Data Integration:</strong> Correlating mRNA and protein - <em>Solution:</em> Collected both Nanostring and alphaLISA data</p>
+<p><strong>6. Assay Interference:</strong> Concerns over plate Edge effects. - <em>Solution:</em> Throughput improvements allow for testing compounds multiple times</p>
 </div>
 </div></div>
 </section>
@@ -875,19 +888,19 @@ Benefit:
 <div class="column" style="width:50%;">
 <div class="feature-card" style="font-size: 1em; padding: 0.8em;">
 <p><strong>Assay Development</strong></p>
-<p>✓ Established robust primary cell culture system (Z’ &gt;0.7)</p>
+<p>✓ Established robust primary cell culture system (Z’ &gt;0.5)</p>
 <p>✓ Implemented dual-readout platform (Nanostring + alphaLISA)</p>
 <p>✓ Validated with clinical and tool compounds</p>
 <p>✓ Achieved screening throughput capability</p>
-<p>✓ Generated mechanistic insight framework</p>
+<p>✓ Developed modular culture automation platform that can translate to other primary cell assays</p>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="feature-card" style="font-size: 1em; padding: 0.8em;">
 <p><strong>Drug Discovery Impact</strong></p>
-<p>✓ Supported 3 lead optimization campaigns</p>
-<p>✓ Screened &gt;2,500 compounds over 18 months</p>
+<p>✓ Supported lead optimization campaign of compound CLY-124 currently in Phase 1</p>
+<p>✓ Screened &gt;500 compounds over 6 months</p>
 <p>✓ Identified novel chemical series with &lt;100 nM potency</p>
-<p>✓ Enabled mechanism-based compound classification</p>
+<p>✓ Enabled primary cell phenotypic screening at scale</p>
 <p>✓ Informed candidate selection for in vivo studies</p>
 </div>
 </div></div>
@@ -901,16 +914,16 @@ Benefit:
 <div class="column" style="width:50%;">
 <div class="feature-card" style="font-size: 1em; padding: 0.8em;">
 <p><strong>Collaborators &amp; Contributors</strong></p>
-<p><strong>Biology Team:</strong> - Primary cell culture development - Assay validation &amp; execution - Data analysis &amp; interpretation</p>
-<p><strong>Chemistry Team:</strong> - Compound synthesis &amp; SAR - Lead optimization campaigns</p>
-<p><strong>Translational Sciences:</strong> - Clinical sample coordination - Biomarker strategy</p>
+<p><strong>Biology Team:</strong> - Initial primary cell culture development and discovery - Initial assay validation &amp; execution - Data analysis &amp; interpretation</p>
+<p><strong>Chemistry Team:</strong> - Compound synthesis &amp; SAR - Lead optimization campaign</p>
+<p><strong>Translational Sciences:</strong> - Support in ADME, PK/PD evaluations, and IVIVC - Biomarker strategy</p>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="feature-card" style="font-size: 1em; padding: 0.8em;">
 <p><strong>Technical Support</strong></p>
-<p><strong>Core Facilities:</strong> - Nanostring nCounter operations - Flow cytometry core - Automation support</p>
 <p><strong>External Partners:</strong> - SCD patient advocacy groups - Clinical material suppliers - Technology vendors</p>
 </div>
+<p><img data-src="images/cellarity-share.png" style="width:80.0%"></p>
 </div></div>
 <div class="highlight-box" style="margin-top: 1em; text-align: center; font-size: 1.2em; padding: 0.7em;">
 <p><strong>Questions?</strong></p>
@@ -922,41 +935,74 @@ Benefit:
 <p><strong>Supplementary Data &amp; Technical Details</strong></p>
 </div>
 </section>
-<section id="nanostring-ncounter-background" class="slide level2">
-<h2>Nanostring nCounter Background</h2>
+<section id="nanostring-ncounter-laboratory-procedure-custom-assay-development" class="slide level2">
+<h2>Nanostring nCounter: Laboratory Procedure &amp; Custom Assay Development</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
 <div class="merck-blue-box" style="font-size: 1.05em; padding: 0.6em;">
-<p><strong>Technology Overview</strong></p>
-<p>Digital molecular barcoding for direct mRNA quantification without amplification</p>
+<p><strong>Standard Laboratory Workflow</strong></p>
 </div>
-<div class="feature-card" style="margin-top: 1em; font-size: 1em; padding: 0.8em;">
-<p><strong>Custom CodeSet Design</strong></p>
-<ul>
-<li><strong>Target Genes:</strong> HBG1, HBG2 (γ-globin), HBB, HBA1/2</li>
-<li><strong>Hemoglobin Switching:</strong> BCL11A, KLF1, MYB, SOX6</li>
-<li><strong>Erythroid Markers:</strong> GATA1, TAL1, EPOR</li>
-<li><strong>Housekeeping:</strong> GAPDH, ACTB, HPRT1</li>
-<li><strong>Total:</strong> 15-20 genes per panel</li>
-</ul>
+<div class="feature-card" style="margin-top: 1em; font-size: 0.85em; padding: 0.8em; line-height: 1.4;">
+<p><strong>Day 1: Sample Preparation &amp; Hybridization</strong> 1. Cell lysis in manufacturer’s buffer (5-10 min) 2. mRNA isolation (optional - can use crude lysate) 3. Mix 5 µL sample (100 ng RNA) with probe cocktail 4. Hybridize overnight at 65°C (16-18 hours)</p>
+<p><strong>Day 2: Automated Processing</strong> 1. Load hybridized samples into nCounter Prep Station 2. Automated washing, immobilization, and alignment (~3 hours) 3. Load cartridge into nCounter Digital Analyzer 4. Digital counting of molecular barcodes (~6 hours)</p>
+<p><strong>Day 3: Data Analysis</strong> - Export raw counts - Normalize to housekeeping genes - Calculate fold-change vs controls</p>
 </div>
 </div><div class="column" style="width:45%;">
-<div class="status-card" style="font-size: 0.95em; padding: 0.7em;">
-<p><strong>Workflow Implementation</strong></p>
-<ol type="1">
-<li>Cell lysis &amp; mRNA isolation</li>
-<li>Hybridization with probe sets (16-18 hrs)</li>
-<li>Nanostring nCounter detection</li>
-<li>Digital counting &amp; normalization</li>
-<li>Data analysis pipeline</li>
-</ol>
-<p><strong>Throughput:</strong> 12-24 samples per run</p>
-<p><strong>Turnaround:</strong> 48 hours</p>
-</div>
-<div class="highlight-box" style="margin-top: 1em; font-size: 1em; padding: 0.6em;">
-<p><strong>Key Advantage:</strong> Minimal sample input (100 ng RNA)</p>
+<div class="highlight-box" style="font-size: 0.95em; padding: 0.7em; margin-bottom: 1em;">
+<p><strong>Key Insight: Custom Assay Development</strong></p>
+<p>Building a custom Nanostring assay is primarily a <strong>bioinformatics exercise</strong>, not molecular biology:</p>
+<ul>
+<li><strong>Probe Design:</strong> Computational selection of optimal binding regions</li>
+<li><strong>Specificity Analysis:</strong> In silico validation against transcriptome</li>
+<li><strong>Cross-reactivity Testing:</strong> Sequence alignment to avoid off-targets</li>
+</ul>
+<p><em>Unlike PCR/qPCR, no primers to optimize, no cycling conditions to test</em></p>
 </div>
 </div></div>
+</section>
+<section id="custom-alphalisa-development-from-antibody-to-assay" class="slide level2">
+<h2>Custom alphaLISA Development: From Antibody to Assay</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="merck-blue-box" style="font-size: 1.05em; padding: 0.6em;">
+<p><strong>Development Workflow</strong></p>
+</div>
+<div class="feature-card" style="margin-top: 0.8em; font-size: 0.78em; padding: 0.7em; line-height: 1.3;">
+<p><strong>Phase 1: Antibody Selection (2-4 weeks)</strong> - Screen commercial antibodies for HbF specificity - Test antibody pairs for sandwich compatibility - Validate no cross-reactivity with HbA/HbS</p>
+<p><strong>Phase 2: Conjugation &amp; Optimization (3-4 weeks)</strong> - Conjugate capture Ab to acceptor beads - Biotinylate detection Ab for donor beads - Optimize bead ratios and incubation times - Test buffer conditions</p>
+<p><strong>Phase 3: Validation (2-3 weeks)</strong> - Generate standard curve with purified HbF - Determine dynamic range (LOD, LLOQ, ULOQ) - Test matrix interference and precision (CV%)</p>
+</div>
+<div class="feature-card" style="margin-top: 0.8em; font-size: 0.8em; padding: 0.6em; text-align: center;">
+<p><strong>Timeline:</strong> 7-11 weeks | <strong>Cost:</strong> ~$30K-45K</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="highlight-box" style="font-size: 0.88em; padding: 0.6em; margin-bottom: 0.8em; line-height: 1.3;">
+<p><strong>Key Principle: Proximity-Based Detection</strong></p>
+<p>AlphaLISA requires antibody pair binding within 200 nm for singlet oxygen energy transfer</p>
+<p><strong>Critical:</strong> No cross-reactivity with adult hemoglobin (HbA/HbS) essential for SCD assay</p>
+</div>
+<div class="feature-card" style="margin-top: 0.8em; font-size: 0.68em; padding: 0.5em; line-height: 1.2;">
+<p><strong>alphaLISA Advantages</strong></p>
+<p>✓ No wash steps - homogeneous format<br>
+✓ Low sample - 5 µL lysate/well<br>
+✓ Wide dynamic range - 4-5 logs<br>
+✓ Matrix tolerant - crude lysate OK<br>
+✓ High sensitivity</p>
+<p><strong>Common Challenges</strong></p>
+<p>• Hook Effect: High [HbF] saturates beads → signal drop<br>
+• Matrix Effects: Lysate components quench signal<br>
+• Antibody Selection: Most time-consuming step</p>
+</div>
+</div></div>
+</section>
+<section id="hematopoietic-stem-cell-differentiation" class="slide level2">
+<h2>Hematopoietic Stem Cell Differentiation</h2>
+<div style="text-align: center;">
+<p><img data-src="images/classic_diff.png" style="width:60.0%"></p>
+<div style="font-size: 0.5em; color: #2c2c2c; margin-top: 1em; font-style: italic; line-height: 1.4; max-width: 60%; margin-left: auto; margin-right: auto; text-align: left;">
+<p>Cheng, H., Zheng, Z. &amp; Cheng, T. New paradigms on hematopoietic stem cell differentiation. Protein Cell 11, 34–44 (2020). https://doi.org/10.1007/s13238-019-0633-0</p>
+</div>
+</div>
 
 </section></section>
     </div>
